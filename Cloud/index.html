@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="images/site_icon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>alexios.tech</title>
+    <link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+    <!-- Include the plotting script -->
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <script src="scripts/gauge.js"></script>
+    <script src="scripts/control_pannel.js" type="text/javascript"></script>
+    <script src="scripts/temperature_chart.js" type="text/javascript"></script>
+</head>
+
+<body onLoad="control_panel_connection()">
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h4 class="logo">IoT device control panel</h4>
+        </header>
+        <!-- Website description intro -->
+        <section class="intro">
+            <div class="column">
+                <p>This website provides a control and monitoring panel for the pyrometric device. A live monitor is provided to see how the measured temperature changes in real time depending on the object the user is pointing to.</p>
+            </div>
+        </section>
+        <!-- Device control panel -->
+        <header class="hero_header">
+            <h4 class="monitor_logo">Time series temperature monitor</h4>
+        </header>
+        <!-- Topic selection -->
+        <div class="input-control">
+            <div class="input-group mb-1">
+                <div class="input-group-prepend"> <span class="input-group-text" id="topic">MQTT Topic</span> </div>
+                <input type="text" class="form-control" placeholder="the default topic is temp (for temperature readings)" aria-describedby="topic-input" id="topic-input">
+            </div>
+        </div>
+        <div class="input-control">
+            <button type="button" class="btn btn-dark" id="save" onClick="temperature_plotter()">Start topic stream</button>
+        </div>
+        <!-- Container for the temperature time series. It inherits width: 100%, max-height: 500px -->
+        <div class="time_series" id="container"> </div>
+        <!-- Container for command and control panel -->
+        <header class="hero_header">
+            <h4 class="monitor_logo">Device control panel</h4>
+        </header>
+        <!-- This contains the buttons for device control and the canvas for battery monitoring -->
+        <div class="input-control-panel">
+            <div class="btn-group-vertical" role="group" style="float:left; padding-left: 5%; padding-top: 0%">
+                <p id="rssi">WiFi RSSI:</p>
+                <button type="button" class="btn btn-primary" onClick="rpc_function(3)" id="reboot_button">Reboot device</button>
+				<button type="button" class="btn btn-primary" onClick="rpc_function(1)" id="dev_auto_button">Device auto mode</button>
+				<button type="button" class="btn btn-primary" onClick="rpc_function(2)" id="dev_man_button"> Device manual mode</button>
+			</div>
+            <div class="input-control-panel_right">
+                    <p id="battery-gauge-text">Battery voltage:</p>
+                    <canvas id="battery"></canvas>
+                </div>
+         </div>
+            <!-- Footer Section -->
+            <footer id="contact">
+                <p class="hero_header">GET IN TOUCH WITH ME</p>
+                <div class="button">EMAIL ME </div>
+            </footer>
+            <!-- Copyrights Section -->
+            <div class="copyright">&copy;2020 - <strong>alex charalampidis</strong></div>
+
+        <!-- Main Container Ends -->
+</body>
+
+</html>

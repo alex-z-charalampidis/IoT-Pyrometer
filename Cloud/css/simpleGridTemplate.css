@@ -1,0 +1,427 @@
+@charset "UTF-8";
+/* Body */
+body {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	background-color: #FFFFFF;
+	margin: 0;
+}
+/* Container */
+.container {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+}
+/* Header */
+header {
+	width: 100%;
+	height: 1%;
+	background-color: #5D5E5D;
+	border-bottom: 10px solid #353635;
+}
+
+.logo {
+    color: #18D0A2;
+    font-weight: bold;
+    margin-left: auto;
+    letter-spacing: 3px;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 5px;
+    line-height: 2em;
+    font-size: 26px;
+    margin-top: 0px;
+}
+.monitor_logo {
+	color: #E79519 ;
+	font-weight: bold;
+	margin-left: auto;
+	letter-spacing: 2px;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 5px;
+	line-height: 2em;
+	font-size: 24px;
+	background: #17559B;
+}
+.hero_header {
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0;
+	padding-top: 3px;
+	
+}
+/* About Section */
+.text_column {
+	width: 90%;
+	text-align: left;
+	font-weight: lighter;
+	line-height: 25px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #A3A3A3;
+}
+.input-control  {
+	text-align: left;
+	padding-top: 5px;
+}
+.input-control-panel {
+    text-align: left;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    padding-left: 0px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: azure;
+    border-radius: 10px;
+    border: 2px solid #003567;
+    box-sizing: border-box;
+    width: 70%;
+    height: 400px;
+}
+.input-control-panel_left {
+	float: left;
+}
+
+.input-control-panel_right p {
+	text-align: center;
+}
+
+.input-control-panel_right {
+	float: right;
+}
+
+.input-control-panel_right p {
+	text-align: center;
+}
+
+.battery-gauge {
+    flex: auto;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 1%;
+	width: auto;
+	height: auto;
+}
+.battery-gauge p {
+	margin: inherit;
+	text-align: center;
+}
+.battery-gauge-canvas {
+    margin-top: 0px;
+}
+.gallery {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	background-color: #FFFFFF;
+	/* [disabled]min-width: 400px;
+*/
+	padding-bottom: 35px;
+	padding-top: 0px;
+	margin-top: -5px;
+	margin-bottom: 0px;
+}
+.time_series{
+	clear: both;
+	display: inline-block;
+	width:100%;
+	max-height: 500px;
+	background: #FFFFFF
+}
+.thumbnail {
+	width: 23%;
+	text-align: center;
+	float: left;
+	margin-top: 35px;
+	background-color: #F8F8F8;
+	padding-bottom: 20px;
+	margin-left: 1%;
+	margin-right: 1%;
+	border-radius: 3px;
+	padding-top: 20px;
+	border-bottom: 4px solid #6DC7D0;
+}
+.gallery .thumbnail h4 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #52BAD5;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.gallery .thumbnail p {
+	margin: 0;
+	color: #B3B3B3;
+	text-align: left;
+	padding-left: 20px;
+}
+/* More info */
+.intro {
+	background-color: #FFFFFF;
+	padding-bottom: 35px;
+}
+.column {
+	width: 100%;
+	text-align: right;
+	padding-top: 20px;
+	float:right;
+}
+.intro .column h3 {
+	color: #FFFFFF;
+	text-align: center;
+}
+.intro .column p {
+	color: #FFFFFF;
+	padding-top: 0px;
+}
+.cards {
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	max-height: 200px;
+	opacity: 0.8;
+}
+.intro .column p {
+	padding-left: 80px;
+	padding-right: 80px;
+	text-align: justify;
+	line-height: 25px;
+	font-weight: lighter;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 80%;
+	margin-top: 4%;
+}
+.button {
+	width: 200px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+}
+.button:hover {
+	background-color: #6DC7D0;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.copyright {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #717070;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+}
+footer {
+	background-color: #B3B3B3;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.intro {
+	display: inline-block;
+	background-color: #6DC7D0;
+	width:100%;
+	height: auto;
+}
+.profile {
+	width: 50%;
+}
+.gallery .thumbnail .tag {
+	color: #5D5E5D;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.monitor_logo {
+	width: 100%;
+	text-align: center;
+	margin-top: auto;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.text_column {
+	width: 100%;
+	text-align: justify;
+	padding: 0;
+}
+.input-control-panel_left {
+	float: left;
+}
+.input-control-panel_right p {
+	text-align: left;
+}
+.input-control-panel_right {
+	float: right;
+}
+.input-control-panel_right p {
+	text-align: center;
+}
+.battery-gauge {
+	flex: auto;
+	margin-top:1%;
+	margin-bottom: 3%;
+	margin-left: 1%;
+	margin-right: 5%;
+	padding-left: 15%
+	
+}
+.input-control-panel {
+    text-align: left;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    padding-left: 0px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: azure;
+    border-radius: 10px;
+    border: 2px solid #003567;
+    display: flex;
+    box-sizing: border-box;
+    width: 70%;
+    height: 400px;
+}
+.input-control-panel canvas{
+	width:250px;
+	height:150px;
+}
+.intro .column p {
+	width: 100%;
+	margin-left: 0px;
+}
+.text_column {
+	padding-left: 20px;
+}
+.thumbnail {
+	width: 100%;
+}
+.column {
+	width: 100%;
+	margin-top: 0px;
+}
+
+.hero_header {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+}
+
+/* Small Tablets */
+@media (min-width: 321px)and (max-width: 767px) {
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.monitor_logo {
+	width: 100%;
+	text-align: center;
+	margin-top: auto;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.text_column {
+	width: 100%;
+	text-align: left;
+	padding: 0;
+}
+.thumbnail {
+	width: 100%;
+}
+.column {
+	width: 100%;
+	margin-top: 0px;
+	height: 50%;
+	
+}
+.thumbnail {
+	width: 100%;
+}
+.text_column {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 90%;
+}
+.column {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.profile {
+	width: 100%;
+}
+.intro .column p {
+	width: 90%;
+	text-align: auto;
+	padding-left: 0px;
+}
+}
+
+/* Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px) {
+.text_column {
+	width: 100%;
+}
+.battery-gauge {
+	flex: auto;
+	margin-top:1%;
+	margin-bottom: 3%;
+	margin-left: 1%;
+	margin-right: 1%;
+	
+}
+.thumbnail {
+	width: 48%;
+}
+.text_column {
+	width: 90%;
+	margin: 0;
+	padding: 20px;
+}
+.intro .column p {
+	width: 80%;
+}
+}
