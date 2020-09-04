@@ -1,7 +1,7 @@
 # IoT pyrometric device firmware
 
-## Installation
-#### You need to have esp-idf downloaded and Mongoose-os installed
+## Building firmware
+#### You need to have esp-idf and Mongoose-os installed
 
 ## Description
 #### The firmware is designed to allow the device to work in two modes. As a handheld pyrometer or as a fixed position pyrometer, depending on the user needs.
@@ -12,4 +12,4 @@
 #### > Remote control of the device. The user can reboot, monitor battery levels and WiFi signal strength remotely
 #### > Easy setup through smartphone or laptop.
 ![alt text](https://i.ibb.co/RP9c515/device-site-PNG.png)
-
+#### > OLED screen to display temperature, distance and battery information
